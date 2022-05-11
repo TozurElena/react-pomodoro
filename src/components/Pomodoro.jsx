@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Buttons from './Button';
 
 const Pomodoro = () => {
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(5);
+  const [minutes, setMinutes] = useState(25);
+  const [seconds, setSeconds] = useState(0);
   const [run, setRun] = useState(false);
   const [startStop, setStartStop] = useState("Start");
 
@@ -47,16 +47,24 @@ const Pomodoro = () => {
       <div className='timer'>
         {timerMinutes}:{timerSeconds}
       </div>
-      <div className='container_btns'>
+      <div className='buttons'>
         <Buttons 
           onClick={() => {
             btnStartStop();
           }}
-          className='controls'>
+          className='btnStartStop'>
           {" "}
           {startStop}{" "}
         </Buttons>
         <br/>
+        <Buttons
+          onClick={()=> {
+            setMinutes(25);
+            setSeconds(0);
+          }}
+          className='controls'>
+            Reset
+          </Buttons>
         <Buttons
           disabled={run}
           onClick={() => {
