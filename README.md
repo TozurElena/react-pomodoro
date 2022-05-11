@@ -22,3 +22,4 @@ use Prettier to format your code, and ESLint to ensure your code following good 
 You will use the BeCode Presets. When your project's package.json file is created, execute the following command: npx @becode/eslint-config --with-hook.
 
 ## Hosting
+https://gregarious-macaron-36f790.netlify.app/ 
