@@ -2,7 +2,7 @@
 
 ## Description:
 **A simple, static, pomodoro timer with React.**
-# Minimal requirements
+### Minimal requirements
 - Display a big timer (minutes and seconds).
 - Four buttons:
   - plus (+) and minus (-), they will allow the user to adjust the minutes counter - only when it's stopped.
